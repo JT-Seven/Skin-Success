@@ -12,130 +12,189 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css"/>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css"/>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css"/>
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
             <!-- Style -->
             <link rel="stylesheet" href="css/accueil.css">
             <title>Accueil</title>
         </head>
-            <div class="scroll-up-btn">
-                <i class="fas fa-angle-up"></i>
-            </div> 
-            <nav class="navbar navbar-expand-lg navbar-light py-3">
-                <a class="navbar-brand text-white">
-                    <span>S</span><span>kin Success</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation" style="border:none !important;">                        
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-md-end" id="navb">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Accueil</a><span class="underline"></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Nos Produits Skin Success</a><span class="underline"></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Panier</a><span class="underline"></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">FAQ</a><span class="underline"></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Nous contacter</a><span class="underline"></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
-                        </li>
-                        <li class="nav-item" id="user">
-                            <a class="nav-link text-white" href="#"><img class="img-user" src="img/user.svg" alt=""> </a><span class="underline"></span>
-                        </li>
-                    </ul> 
-                </div>
-            </nav> 
-            <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
-        <header>
-        </header> 
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div> 
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <a class="navbar-brand text-white">
+                <span>S</span><span>kin Success</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation" style="border:none !important;">                        
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navb">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Accueil</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Nos Produits Skin Success</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Panier</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">FAQ</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Nous contacter</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item" id="user">
+                        <a class="nav-link text-white" href="#"><img class="img" src="img/user.svg" alt=""> </a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><img id="search" class="img" src="img/search.svg" alt=""></a><span class="underline"></span>
+                    </li>
+                </ul> 
+            </div>
+        </nav> 
+        <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
+        <header></header> 
 
-            <!-- Message de bienvenue -->
-            <div class="container container-bienvenu">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 col-sm-6 col-md-8 py-5">
-                        <div class="bienvenue-main">
-                            <div class="bienvenue-msg text-center">
-                                <h1>Bienvenue sur Skin Success !</h1>
-                                <a href="#en-savoir-plus" class="btn btn-bienvenue btn-lg my-4 scroll-smooth">En savoir plus</a>
-                            </div>
+        <!-- Message de bienvenue -->
+        <div class="container container-bienvenu">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-sm-6 col-md-8 py-5">
+                    <div class="bienvenue-main">
+                        <div class="bienvenue-msg text-center">
+                            <h1>Bienvenue sur Skin Success !</h1>
+                            <a href="#en-savoir-plus" class="btn btn-bienvenue btn-lg my-4 scroll-smooth">En savoir plus</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Fin message de bienvenue -->
+        </div>
+        <!-- Fin message de bienvenue -->
 
                 
         <body>
 
             <!-- Présentation -->
-            <div class="container" id="en-savoir-plus">
+            <div class="container container-vente-populaire" id="en-savoir-plus">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-sm-6 col-md-8 py-5 text-center">
-                        <!-- Titre de la présentation -->
+                        <!-- Titre Vente populaire -->
                         <div class="titre py-4">
-                            <h1>Ma présentation</h1>
+                            <h1>Vente populaire</h1>
                         </div>
                         <!-- Séparateur  -->
                         <div class="separateur separateur-center my-2"></div>
                         <!-- Contenue de la présentation -->
-                        <div class="contenue py-5">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veritatis pariatur magnam quasi illo corrupti, placeat molestias rem, omnis excepturi id doloribus odit officiis dolorum aliquid officia, non inventore velit.
-                            </p>
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="contenue py-5">
+                                        <div class="container-img">
+                                            <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        </div>
+                                        <div class="content-vente">
+                                            <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
+                                            <p>
+                                                Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contenue py-5">
+                                        <div class="container-img">
+                                            <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        </div>
+                                        <div class="content-vente">
+                                            <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
+                                            <p>
+                                                Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contenue py-5">
+                                        <div class="container-img">
+                                            <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        </div>
+                                        <div class="content-vente">
+                                            <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
+                                            <p>
+                                                Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 9500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+
             <!-- Fin présentation -->
 
-            <!-- Services -->
-            <div class="container-fluid services">
+            <!-- Collection -->
+            <div class="container-fluid collection">
                 <div class="row">
                     <div class="col-lg-12 col-xl-12 col-md-12 text-center">
-                        <!-- Titre des servicex -->
-                        <div class="titre py-4 my-4">
-                            <h1>Mes services</h1>
+                        <!-- Titre Nos collection -->
+                        <div id="titre-nos-collection" class="titre py-4">
+                            <h1>Nos collection</h1>
                         </div>
+                        <!-- Séparateur  -->
+                        <div class="separateur separateur-center my-2"></div>
 
-                        <!-- Séparateur -->
-                        <div class="separateur separateur-center text-white"></div>
-
-                        <!-- Contenue des services -->
-                        <div class="services-contenue">
-                            <figure>
-                                <i class="fas fa-pencil-ruler"></i>
-                                <figcaption>
-                                    <h3>Simple et épuré</h3>
-                                </figcaption>
-                            </figure>
-                            
-                            <figure>
-                                <i class="fas fa-mobile-alt"></i>
-                                <figcaption>
-                                    <h3>Adaptable</h3>
-                                </figcaption>
-                            </figure>
-                            
-                            <figure>
-                                <i class="fas fa-sliders-h"></i>
-                                <figcaption>
-                                    <h3>Modifiable</h3>
-                                </figcaption>
-                            </figure>
+                        <!-- Contenue des collection -->
+                        <div class="collection-contenue">
+                            <div class="scroll">
+                                <div id="contents" class="contenue py-5">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Fin servivce -->
 
+            <div class="new-sletter">
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nulla laborum eius sint accusamus, quas minus? Dignissimos repellat exercitationem molestias?</h3>
+            </div>
 
             <!-- Mes réalisations -->
             <div class="container-fluid">
@@ -174,79 +233,27 @@
                     </div>
                 </div>
             </div>
-            <!-- Fin réalisations-->
-
-
-
-
-            <!-- Début me contacter -->
-            <div class="container-fluid bg-grey" id="contact">
-                    <div class="col-lg-12 col-xl-12 col-md-12">
-                        <!-- Contact -->
-                        <div class="contact py-5">
-
-                            <div class="titre px-5 py-5 text-center text-white">
-                                <h1>Me contacter</h1>
-                                <br>
-                                <div class="separateur separateur-center white"></div>
-                            </div>
-                            <!-- Formulaire -->
-                            <div class="form-group">
-                                <form action="" method="" class="col-md-7 form-contact text-center">
-
-                                    <div class="row">
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" name="" class="form-control text-white my-4" placeholder="Votre nom" autocomplete="off"/>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" name="" class="form-control text-white my-4" placeholder="Votre prénom" autocomplete="off"/>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <input type="email" name="" class="form-control text-white my-4" placeholder="Votre email" autocomplete="off"/>                
-                                            <textarea class="form-control text-white" placeholder="Message" rows="5" autocomplete="off"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <br>
-                                    <button type="button" class="btn btn-contact-send">Envoyer</button>
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script>
+                const toTop = document.querySelector(".gotopbtn");
+                window.addEventListener("scroll", () => {
+                    if (window.pageYOffset > 100) {
+                        toTop.classList.add("active-btn-top");
+                    } else {
+                        toTop.classList.remove("active-btn-top");
+                    }
+                });
+            </script>
+        </body>
+        <footer>
+            <div class="container-fluid bg-black">
+                <div class="credits">
+                    <h3 class="text-white py-5">
+                        &copy;&nbsp;Skin-Succces - 2021
+                    </h3>
                 </div>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-                <script>
-                    const toTop = document.querySelector(".gotopbtn");
-                    window.addEventListener("scroll", () => {
-                        if (window.pageYOffset > 100) {
-                            toTop.classList.add("active-btn-top");
-                        } else {
-                            toTop.classList.remove("active-btn-top");
-                        }
-                    });
-                </script>
-            </body>
-    <footer>
-        <div class="container-fluid bg-black">
-            <div class="credits">
-                <h3 class="text-white py-5">
-                    &copy;&nbsp;JT-Seven - 2021
-                </h3>
             </div>
-        </div>
-    </footer>
+        </footer>
 </html>

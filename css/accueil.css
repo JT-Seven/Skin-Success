@@ -63,12 +63,12 @@ i.fa-bars
 
 .container {
     position: relative;
-    top: -650px;
+    top: -45rem;
 }
 
 .container-bienvenu {
     position: relative;
-    top: -780px;
+    top: -60rem;
 }
 
 header
@@ -81,7 +81,7 @@ header
     filter: blur(4px);
     z-index: 1;
     width: 100%;
-    height: 750px;
+    height: 907px;
 }
 
 .pt-5, .py-5 {
@@ -103,7 +103,85 @@ header
     font-weight: lighter;
 }
 
+/* ------------Vente populaire------------ */
 
+.contenue {
+    display: ;
+}
+
+.py-5 .container-img img {
+    width: 450px;
+}
+
+.py-5 .container-img {
+    float: left;
+}
+
+.py-5 .titre-vente {
+    display: inline-block;
+    margin: 50px 0px;
+    white-space: nowrap;
+}
+
+.py-5 .content-vente {
+    text-align: center;
+}
+
+.container-vente-populaire {
+
+}
+
+
+
+/* ----------Swiper-vente---------- */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 1050px;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet
+  {
+      width: 50px;
+      border-radius: 0;
+      padding: 6px;
+  }
+
+  .swiper-pagination-bullet-active {
+      background: #bb9a76;
+  }
+
+  
 /* ----------Scroll Top---------- */
 
 .gotopbtn {
@@ -144,8 +222,13 @@ header
     top: 20px;
   }
 
-  nav .img-user {
+  nav .img {
     width: 25px;
+    position: relative;
+  }
+
+  nav #search {
+    width: 22px;
     position: relative;
   }
 
@@ -171,20 +254,76 @@ header
 }
 
 
-/* Services */
-.services
+/* ----------Nos collection---------- */
+
+.collection
 {
     background-image: url('../img/wallpaper-deux.jpg');
+    top: -35rem;
+    position: relative;
 }
-.services .titre h1 
+.collection .titre h1 
 {
     color:white; 
     font-size: 45px;
 }
 
+.collection #titre-nos-collection {
+    margin-top: 20px;
+} 
 
-/* icones services */
-.services-contenue 
+.collection .titre-collection {
+
+}
+
+.collection .content-collection {
+    text-align: initial;
+}
+
+.collection #contents {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.collection .scroll {
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* icones collection */
+.collection-contenue 
+{
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    min-height:400px;
+    color:white;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.collection-contenue i 
+{
+    font-size: 55px !important;
+    padding: 15px;
+}
+
+.collection-contenue figcaption h3
+{
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+
+/* icones collection */
+.collection-contenue 
 {
     display: flex !important;
     justify-content: space-around !important;
@@ -193,13 +332,13 @@ header
     color:white;
 }
 
-.services-contenue i 
+.collection-contenue i 
 {
     font-size: 55px !important;
     padding: 15px;
 }
 
-.services-contenue figcaption h3
+.collection-contenue figcaption h3
 {
     font-size: xx-large;
     font-weight: lighter;
@@ -211,7 +350,6 @@ header
 {
     display: flex;
     /* width: 100% !important; */
-    
 }
 
 .text-realisation 
@@ -312,8 +450,6 @@ header
     outline: none;
 }
 
-
-
 .separateur 
 {
     max-width: 250px;
@@ -368,11 +504,6 @@ header
     margin: auto !important;
 }
 
-@media (min-width: 992px) {
-    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-        color:red;
-    }
-}
 
 
 @media (min-width: 768px) {
@@ -383,5 +514,12 @@ header
     #user {
         left: 0;
     }
+    
+}
 
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color:red;
+    }
+    
 }
