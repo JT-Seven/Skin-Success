@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="QS">
+            <meta name="description" content="Site réalisé pour YouTube, open source,">
+            <!-- Boostrap -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <!-- Font awesome -->
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css"/>
+            <!-- Style -->
+            <link rel="stylesheet" href="css/produit.css">
+            <title>Accueil</title>
+        </head>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div> 
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <a class="navbar-brand text-white">
+                <span>S</span><span>kin Success</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation" style="border:none !important;">                        
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navb">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="accueil.html">Accueil</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Nos Produits Skin Success</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Panier</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">FAQ</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Nous contacter</a><span class="underline"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
+                    </li>
+                </ul> 
+            </div>
+            <ul class="navbar-nav-logo">
+                <li id="search_">
+                    <a class="nav-link text-white" href="#"><img id="search" class="img" src="img/search.svg" alt=""></a><span class="underline"></span>
+                </li>
+                <li id="user">
+                    <a class="nav-link text-white" href="inscrire.html"><img class="img" src="img/user.svg" alt=""> </a><span class="underline"></span>
+                </li>
+                <li id="panier">
+                    <a class="nav-link text-white" href="#"><img id="panier" class="img" src="img/bag.svg" alt=""></a><span class="underline"></span>
+                </li>
+            </ul>
+        </nav> 
+        <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
+
+        <body>
+
+            <!-- Produit -->
+            <div class="container container-produit">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-6 col-md-8 py-5 text-center">
+                        <!-- Titre Vente populaire -->
+                        <div class="titre py-4">
+                            <h1>Produits</h1>
+                        </div>
+                        <!-- Séparateur  -->
+                        <div class="separateur separateur-center my-2"></div>
+                        <!-- Contenue de la présentation -->
+                            <section class="zone-filtre">
+                                <div class="contents-filtre">
+                                    <h3>Trier par</h3>
+                                    <form action="#">
+                                        <select name="order-by" id="order-by">
+                                            <option value="vedette"selected disabled>Vedette</option>
+                                            <option value="topventes">Meilleures ventes</option>
+                                            <option value="alphabet">Alphabétique, de A à Z</option>
+                                            <option value="alphabet">Alphabétique, de Z à A</option>
+                                            <option value="prix">Prix: faible à élevé</option>
+                                            <option value="prix">Prix: élevé à faible</option>
+                                            <option value="date">Date, de la plus ancienne à la plus récente</option>
+                                            <option value="date">Date, de la plus récente à la plus ancienne</option>
+                                        </select>
+                                    </form>
+                                    <div class="produit-trouve">
+                                        <p><span>500</span> Produits</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="page-produit">
+                                
+                                <section class="zone-search">
+                                    <div class="container-cards">
+                                        <div class="cards">
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                            <div id="contents" class="contenue py-5">
+                                                <div id="produit-img">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                </div>
+                                                <div class="content-produit">
+                                                    <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                    <p>€19,99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script>
+                const toTop = document.querySelector(".gotopbtn");
+                window.addEventListener("scroll", () => {
+                    if (window.pageYOffset > 100) {
+                        toTop.classList.add("active-btn-top");
+                    } else {
+                        toTop.classList.remove("active-btn-top");
+                    }
+                });
+            </script>
+        </body>
+        <footer>
+            <div class="container-fluid bg-black">
+                <div class="credits">
+                    <div class="new-sletter">
+                        <h3>Newsletter</h3>
+                        <form action="#">
+                            <input type="text" placeholder="Adresse e-mail" id="champs">
+                            <input type="submit" id="btn" value="S'inscrire">
+                        </form>
+                    </div>
+                    <h3 class="text-white py-5">
+                        &copy;&nbsp;Skin-Succces - 2021
+                    </h3>
+                </div>
+            </div>
+        </footer>
+</html>

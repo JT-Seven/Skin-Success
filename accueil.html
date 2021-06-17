@@ -4,16 +4,15 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="author" content="QS">
-            <meta name="description" content="Site réalisé pour YouTube, open source,">
+            <meta name="description" content="Site réalisé pour Skin Succes">
             <!-- Boostrap -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
             <!-- Font awesome -->
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css"/>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css"/>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css"/>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css"/>
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
             <!-- Style -->
             <link rel="stylesheet" href="css/accueil.css">
             <title>Accueil</title>
@@ -34,7 +33,7 @@
                         <a class="nav-link text-white" href="#">Accueil</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Nos Produits Skin Success</a><span class="underline"></span>
+                        <a class="nav-link text-white" href="produit.html">Nos Produits Skin Success</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Panier</a><span class="underline"></span>
@@ -48,14 +47,19 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
                     </li>
-                    <li class="nav-item" id="user">
-                        <a class="nav-link text-white" href="#"><img class="img" src="img/user.svg" alt=""> </a><span class="underline"></span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#"><img id="search" class="img" src="img/search.svg" alt=""></a><span class="underline"></span>
-                    </li>
                 </ul> 
             </div>
+            <ul class="navbar-nav-logo">
+                <li id="search_">
+                    <a class="nav-link text-white" href="#"><img id="search" class="img" src="img/search.svg" alt=""></a><span class="underline"></span>
+                </li>
+                <li id="user">
+                    <a class="nav-link text-white" href="inscrire.html"><img class="img" src="img/user.svg" alt=""> </a><span class="underline"></span>
+                </li>
+                <li id="panier">
+                    <a class="nav-link text-white" href="#"><img id="panier" class="img" src="img/bag.svg" alt=""></a><span class="underline"></span>
+                </li>
+            </ul>
         </nav> 
         <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
         <header></header> 
@@ -74,7 +78,6 @@
             </div>
         </div>
         <!-- Fin message de bienvenue -->
-
                 
         <body>
 
@@ -101,6 +104,9 @@
                                             <p>
                                                 Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
                                             </p>
+                                            <div class="voir-plus">
+                                                <button><a href="#">Voir +</a></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -114,6 +120,9 @@
                                             <p>
                                                 Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
                                             </p>
+                                            <div class="voir-plus">
+                                                <button><a href="#">Voir +</a></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -127,6 +136,9 @@
                                             <p>
                                                 Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
                                             </p>
+                                            <div class="voir-plus">
+                                                <button><a href="#">Voir +</a></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -177,7 +189,70 @@
                         <div class="collection-contenue">
                             <div class="scroll">
                                 <div id="contents" class="contenue py-5">
-                                    <div class="container-img">
+                                    <div id="collection-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
                                         <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
                                     </div>
                                     <div class="content-collection">
@@ -192,15 +267,11 @@
             </div>
             <!-- Fin servivce -->
 
-            <div class="new-sletter">
-                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nulla laborum eius sint accusamus, quas minus? Dignissimos repellat exercitationem molestias?</h3>
-            </div>
-
             <!-- Mes réalisations -->
-            <div class="container-fluid">
+            <div class="container-fluid contact">
                 <div class="col-lg-12 col-xl-12 col-md-12">
-                    <!-- Réalisation -->
-                    <div class="realisation">
+                    <!-- contact -->
+                    <div class="contact_">
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-auto">
@@ -210,9 +281,9 @@
                                 </div>
                                 <div class="col">
                                     <div class="card-block">
-                                        <div class="text-realisation">
+                                        <div class="text-contact">
                                             <div class="titre px-5 py-5">
-                                                <h1>Réalisation</h1>
+                                                <h1>Contact</h1>
                                                 <br />
                                                 <div class="separateur"></div>
                                             </div>
@@ -250,6 +321,13 @@
         <footer>
             <div class="container-fluid bg-black">
                 <div class="credits">
+                    <div class="new-sletter">
+                        <h3>Newsletter</h3>
+                        <form action="#">
+                            <input type="text" placeholder="Adresse e-mail" id="champs">
+                            <input type="submit" id="btn" value="S'inscrire">
+                        </form>
+                    </div>
                     <h3 class="text-white py-5">
                         &copy;&nbsp;Skin-Succces - 2021
                     </h3>
