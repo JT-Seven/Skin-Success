@@ -643,6 +643,10 @@ footer {
     text-align: center !important;
 }
 
+.btn.focus, .btn:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 25%);;
+}
+
 .form-contact 
 {
     margin: auto !important;

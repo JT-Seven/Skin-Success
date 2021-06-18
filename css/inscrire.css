@@ -273,6 +273,9 @@ i.fa-bars
 .login-form .group{
 	margin-bottom:15px;
 }
+.login-form #group{
+	margin-bottom:30px;
+}
 .login-form .group .label,
 .login-form .group .input,
 .login-form .group .button{
@@ -286,15 +289,16 @@ i.fa-bars
     outline: none;
 	padding:15px 20px;
 	border-radius:25px;
-	background:rgb(255 228 196);
+	background:rgb(255 255 255);
 }
 .login-form .group .input, .login-form .group .button:focus {
     border:none;
     outline: none;
 }
-.login-form .group input[data-type="password"]{
+.login-form .group input[data-type="password"] {
 	text-security:circle;
 	-webkit-text-security:circle;
+	-ms-text-security:circle;
 }
 .login-form .group .label{
 	color:#fff;
