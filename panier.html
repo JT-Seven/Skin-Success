@@ -39,7 +39,7 @@
                         <a class="nav-link text-white" href="faq.html">FAQ</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Nous contacter</a><span class="underline"></span>
+                        <a class="nav-link text-white" href="contacter.html">Nous contacter</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
@@ -51,46 +51,738 @@
                     <a class="nav-link text-white" href="#"><img id="search" class="img" src="img/search.svg" alt=""></a><span class="underline"></span>
                 </li>
                 <li id="user">
-                    <a class="nav-link text-white" href="inscrire.html"><img class="img" src="img/user.svg" alt=""> </a><span class="underline"></span>
+                    <a class="nav-link text-white" href="inscrire.html"><img class="img" src="img/user.svg" alt=""></a><span class="underline"></span>
                 </li>
                 <li id="panier">
-                    <a class="nav-link text-white" href="panier.html"><img id="panier" class="img" src="img/bag.svg" alt=""></a><span class="underline"></span>
+                    <a class="nav-link text-white" href="panier.html"><img id="panier" class="img" src="img/bag.svg" alt=""></a><div class="compteur">20</div><span class="underline"></span>
                 </li>
             </ul>
+            <div class="search-bar">
+                <form action="#">
+                    <input type="search" name="recherche" placeholder="Recherche...">
+                    <button id="btn-search">Rechercher</button>
+                </form>
+            </div>
         </nav> 
+        <div class="zone-invi"></div>
+        <script>
+            const lien = document.getElementById("search_");
+            const search = document.querySelector(".search-bar");
+            const btn = document.getElementById("btn-search");
+            const zone = document.querySelector(".zone-invi");
+
+            lien.addEventListener('click', () => {
+                search.style.visibility = "visible";
+                lien.classList.add('search-bar');
+                zone.style.visibility = "visible";
+                if(btn.addEventListener('click', () => {
+                    search.style.visibility = "hidden";
+                    lien.classList.remove('search-bar');
+                }));
+                if(zone.addEventListener('click', () => {
+                    search.style.visibility = "hidden";
+                    zone.style.visibility = "hidden";
+                    lien.classList.remove('search-bar');
+                }));
+            });
+        </script>
         <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
 
         <body>
           <!-- Panier -->
           <div class="container content-panier">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-sm-6 col-md-8 py-5 text-center">
-                    <!-- Titre Panier -->
-                    <div class="titre py-4">
-                        <h1>Votre panier</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-6 col-md-8 py-5 text-center">
+                        <!-- Titre Panier -->
+                        <div class="titre py-4">
+                            <h1>Votre panier</h1>
+                        </div>
+                        <!-- Séparateur  -->
+                        <div class="separateur separateur-center my-2"></div>
+                        <div class="container-panier">
+                            <div class="commandes">
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prix-total">
+                                <div class="passer-commande">
+                                    <form action="#">
+                                        <button>Passer ma commande</button>
+                                    </form>
+                                </div>
+                                <h3>Total Commande</h3>
+                                <p>TVA incluse</p>
+                                <p>€400.20</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Séparateur  -->
-                    <div class="separateur separateur-center my-2"></div>
-                      <div class="container-panier">
-                        
-                      </div>
-                  </div>
-              </div>
-          </div>
 
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-              <script>
-                  const toTop = document.querySelector(".gotopbtn");
-                  window.addEventListener("scroll", () => {
-                      if (window.pageYOffset > 100) {
-                          toTop.classList.add("active-btn-top");
-                      } else {
-                          toTop.classList.remove("active-btn-top");
-                      }
-                  });
-          </script>
+                    <div class="container-livraison">
+                        <div class="contents-livraison">
+                            <h3>Livraison</h3>
+                            <button>Choisir le mode de livraison</button>
+                        </div>
+                    </div>
+
+                    <div class="container-articles-vue">
+                        <div class="contents-articles-vue">
+                            <h3>Articles vus récement</h3>
+                            <div class="swiper-container mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                centeredSlides: true,
+                spaceBetween: 30,
+                loop: true,
+                grabCursor: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+            });
+            </script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <script>
+                    const toTop = document.querySelector(".gotopbtn");
+                    window.addEventListener("scroll", () => {
+                        if (window.pageYOffset > 100) {
+                            toTop.classList.add("active-btn-top");
+                        } else {
+                            toTop.classList.remove("active-btn-top");
+                        }
+                    });
+            </script>
+            <script>
+                
+                const produit = document.querySelector(".container-produit");
+
+                produit.addEventListener('mouseover', () => {
+                    console.log("BIEN BON !");
+                    produit.classList.add("zone-ajouter");
+                });
+                
+                produit.addEventListener('mouseout', function(){
+                    console.log("BIEN BON !");
+                    produit.classList.remove("zone-ajouter");
+                });
+            
+            </script>
             
         </body>
         <footer>

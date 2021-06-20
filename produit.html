@@ -39,7 +39,7 @@
                         <a class="nav-link text-white" href="faq.html">FAQ</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Nous contacter</a><span class="underline"></span>
+                        <a class="nav-link text-white" href="contacter.html">Nous contacter</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
@@ -57,7 +57,35 @@
                     <a class="nav-link text-white" href="panier.html"><img id="panier" class="img" src="img/bag.svg" alt=""></a><span class="underline"></span>
                 </li>
             </ul>
+            <div class="search-bar">
+                <form action="#">
+                    <input type="search" name="recherche" placeholder="Recherche...">
+                    <button id="btn-search">Rechercher</button>
+                </form>
+            </div>
         </nav> 
+        <div class="zone-invi"></div>
+        <script>
+             const lien = document.getElementById("search_");
+            const search = document.querySelector(".search-bar");
+            const btn = document.getElementById("btn-search");
+            const zone = document.querySelector(".zone-invi");
+
+            lien.addEventListener('click', () => {
+                search.style.visibility = "visible";
+                lien.classList.add('search-bar');
+                zone.style.visibility = "visible";
+                if(btn.addEventListener('click', () => {
+                    search.style.visibility = "hidden";
+                    lien.classList.remove('search-bar');
+                }));
+                if(zone.addEventListener('click', () => {
+                    search.style.visibility = "hidden";
+                    zone.style.visibility = "hidden";
+                    lien.classList.remove('search-bar');
+                }));
+            });
+        </script>
         <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
 
         <body>

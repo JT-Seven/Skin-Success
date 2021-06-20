@@ -57,22 +57,66 @@
     position: relative;
     top: 7px;
   }
+
+/* -------------------------------------------BARRE DE RECHERCHE---------------------------------------  */
+
   
-  nav .compteur {
-    display: inline-block;
+ nav .search-bar {
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 28px;
-    background: #bb9a76;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    text-align: center;
-    font-size: .8rem;
+    height: 100%;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    background: #e8c497;
+ }
+
+ nav .search-bar form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ nav .search-bar input {
+    padding: 10px 15px;
+    width: calc(100% - 400px);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #825037;
+    background:#e8c497;
+ }
+
+ nav .search-bar button {
+    padding: 10px 10px;
+    border: none;
+    background: white;
+    margin-left: 10px;
+    border-radius: 2px;
+ }
+
+ nav .search-bar button:focus {
+    border:none;
+    outline: none;
+ }
+
+ nav .search-bar button:hover {
+    background: #825037;
     color: #fff;
-  }
+ }
+
+ .zone-invi {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh + 100%);
+    background: #0000008f;
+    z-index: 5;
+    visibility: hidden;
+ }
   
-  
+ /* ----------------------------------------------------------------------------------  */
+
   /* Reste style */
   
   #border-taff 
@@ -157,412 +201,125 @@
   #search_ {
       position: relative;
   }
-
-  /* -------------------------------------------BARRE DE RECHERCHE---------------------------------------  */
-
   
- nav .search-bar {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    display: flex;
-    visibility: hidden;
-    justify-content: center;
-    align-items: center;
-    background: #e8c497;
- }
-
- nav .search-bar form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
- nav .search-bar input {
-    padding: 10px 15px;
-    width: calc(100% - 400px);
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #825037;
-    background:#e8c497;
- }
-
- nav .search-bar button {
-    padding: 10px 10px;
-    border: none;
-    background: white;
-    margin-left: 10px;
-    border-radius: 2px;
- }
-
- nav .search-bar button:focus {
-    border:none;
-    outline: none;
- }
-
- nav .search-bar button:hover {
-    background: #825037;
-    color: #fff;
- }
-
- .zone-invi {
-    position: fixed;
-    width: 100%;
-    height: calc(100vh + 100%);
-    background: #0000008f;
-    z-index: 5;
-    visibility: hidden;
- }
   
- /* ----------------------------------------------------------------------------------  */
-  
-  /* --------------------------------------------------------------------------------- */
-  
-  .container-panier {
-    text-align: justify;
-    height: auto;
-    margin-top: 70px;
-    padding: 0 150px;
-  }
+/* ---------------------------------------CONTACTER------------------------------------------ */
 
-.commandes {
-    height: 900px;
-    overflow-y: scroll;
+.container-contact {
     width: 100%;
-    margin-bottom: 105px;
+    margin-top: 80px;
 }
 
-.container-panier .prix-total {
-    position: absolute;
-    bottom: 0;
-    background: #000;
-    width: calc(100% - 340px);
-    color: #fff;
-    padding: 20px;
+.container-contact .formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
-.container-panier .prix-total h3 {
+.container-contact .formulaire h3 {
     font-weight: lighter;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
-.container-panier .prix-total p {
-    font-size: 1.3rem;
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
-
-.container-panier .passer-commande {
-    position: absolute;
-    left: 65%;
-    top: 30px;
-}
-
-.container-panier .passer-commande button {
-    padding: 14px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    /* background-color: #d34bca; */
-    background-color: salmon;
-    color: #fff;
-    opacity: .85;
-    transition: .3s ease-in-out;
-    font-weight: lighter;
-    width: 250px;
-    text-transform: uppercase;
-}
-
-.container-panier .passer-commande button:hover {
-    opacity: 1;
-}
-
-.container-panier .passer-commande p {
-    font-weight: lighter;
-    font-size: 1.3rem;
-}
-
-.contents-commandes {
-    background: #bb9a76;
-    padding: 20px;
+.container-contact .formulaire form {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
-    position: relative;
+    justify-content: space-between;
+    max-width: 600px;
 }
 
-.py-5 .container-img img {
-    width: 200px;
+.container-contact .formulaire form input {
+    width: 47%;
 }
 
-.py-5 .container-img {
-    display: flex;
-    justify-content: flex-start;
-    cursor: pointer;
+.container-contact .formulaire form input:hover, 
+.container-contact .formulaire form textarea:hover {
+    border-bottom: 2px solid #e8c497;
 }
 
-.contents-commandes h3 {
-    font-size: 1.1rem;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: #fff;
-}
-
-.contents-commandes p {
-    position: absolute;
-    top: 160px;
-    left: 90%;
-    color: #fff;
-}
-
-.contents-commandes .quantiter {
-    position: absolute;
-    top: 160px;
-    left: 230px;
-    display: flex;
-    color: #fff;
-    opacity: .7;
-    transition: .3s ease;
-    font-weight: lighter;
-}
-
-.contents-commandes .quantiter:hover {
-    opacity: 1;
-}
-
-.contents-commandes .quantiter select {
-    background: transparent;
-    border: none;
-    padding: 0 10px;
-    color: #fff;
-}
-
-.contents-commandes .quantiter select option {
-    background: #e8c497;
-}
-
-.contents-commandes .quantiter select:focus {
-    border: none;
-    outline: none;
-}
-
-.contents-commandes .btn {
-    position: absolute;
-    top: 20px;
-    left: 90%;
-}
-
-.contents-commandes .btn button {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    border: none;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s ease-in-out;
-}
-
-.contents-commandes .btn button:hover {
-    opacity: .8;
-}
-
-.contents-commandes .btn button span:nth-child(1) {
-    transform: rotate(135deg);
-    height: 2px;
-    width: 20px;
-    background-color: #000;
-    position: absolute;
-}
-
-.contents-commandes .btn button span:nth-child(2) {
-    transform: rotate(45deg);
-    height: 2px;
-    width: 20px;
-    background-color: #000;
-    position: absolute;
-}
-
-
-.commandes::-webkit-scrollbar{
-width:10px;
-}
-.commandes::-moz-scrollbar {
-width:10px;
-}
-.commandes::-ms-scrollbar {
-width:10px;
-}
-.commandes::-o-scroolbar {
-width:10px;
-}
-.commandes::-webkit-scrollbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-.commandes::-moz-scrollbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-.commandes::-ms-scrollbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-.commandes::-o-scroolbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-
-/* ---------------------------------------LIVRAISON------------------------------------------ */
-
-.container-livraison {
-    margin-top: 50px;
-    padding: 0 150px;
-    width: 100%;
-}
-
-.container-livraison .contents-livraison { 
-    padding: 15px;
-}
-
-.container-livraison .contents-livraison h3 { 
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: #000;
-}
-
-.container-livraison .contents-livraison button { 
+.container-contact .formulaire form input,
+.container-contact .formulaire form textarea {
+    margin: 15px 0;
     padding: 10px;
-    width: 100%;
-    margin-top: 30px;
+    box-sizing: border-box;
+    border: none;
     outline: none;
-    border:none;
-    background: #bb9a76;
-    color: #fff;
+    border-bottom: 2px solid #ffffff;
+    transition: 0.2s;
+    background: bisque;
+}
+
+.container-contact .formulaire form textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 40px;
+}   
+
+.container-contact .formulaire form button {
+    width: 192px;
+    height: 50px;
     border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: lighter;
+    cursor: pointer;
     transition: .3s ease-in-out;
-    opacity: 1;
+    background: #fff;
+    text-transform: uppercase;
 }
 
-.container-livraison .contents-livraison button:hover { 
-    opacity: .6;
+.container-contact .formulaire form button:hover {
+    background: #e8c497;
+    color: #fff;
 }
 
-
-
-/* --------------------------------------------------------------------------------- */
-
-
-/* ---------------------------------------VUE RECEMENT------------------------------------------ */
-
-.container-articles-vue {
-    background: #ffe4c4;
-    width: 100%;
-    margin-top: 70px;
+.container-contact .question { 
+    text-align: justify;
+    margin-bottom: 50px;
 }
 
-.container-articles-vue .contents-articles-vue {
-    width: 100%;
-    height: 100%;
-    padding: 15px;
+.container-contact .question::first-letter { 
+    font-size: 1.6rem;
 }
 
-.container-articles-vue .contents-articles-vue h3 {
-    color: #000;
+.container-contact .content-clients { 
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.container-contact .content-clients h3 { 
+    text-align: justify;
+    margin-bottom: 30px;
     font-weight: lighter;
     text-transform: uppercase;
 }
 
-.container-articles-vue .contents-articles-vue .content-produit h3 {
-    color: rgb(0, 0, 0);
+.container-contact .content-siege { 
+    text-align: justify;
+    margin-bottom: 50px;
 }
 
-.container-articles-vue .contents-articles-vue .container-produit {
-    width: max-content;
-    margin-top: 50px;
-}
-
-.container-articles-vue .contents-articles-vue .container-produit.zone-ajouter {
-    background:red;
-    height: 100%;
-    width: 100%;
-}
-
-.container-articles-vue .contents-articles-vue .container-produit img {
-    width: 200px;
-}
-
-.container-articles-vue .contents-articles-vue .container-produit h3 {
-    font-size: 1rem;
-}
-
-.container-articles-vue .contents-articles-vue .content-produit {
-    padding: 2px 2px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.container-articles-vue .contents-articles-vue .content-produit p {
-    color: rgb(0, 0, 0);
-}
-
-.container-articles-vue .contents-articles-vue .swiper-slide button {
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    position: absolute;
-    bottom: -30px;
-    left: -8px;
-    background:#fff;
-    width: 12.5rem;
-    transition: .3s ease;
+.container-contact .content-siege h3 { 
+    text-align: justify;
+    margin-bottom: 30px;
     font-weight: lighter;
+    text-transform: uppercase;
 }
 
-.container-articles-vue .contents-articles-vue .swiper-slide button:hover {
-    opacity: .7;
+p {
+    font-size: 1.1rem;
+    font-weight: lighter;
 }
 
 /* --------------------------------------------------------------------------------- */
 
-  
-/* ----------Swiper-vente---------- */
-
-.swiper-container {
-    width: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    margin-right: 0px !important;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  
-  /* --------------------------------------------------------------------------------- */
   
   
   /* -------------------PRODUIT---------------- */

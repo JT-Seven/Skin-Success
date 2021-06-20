@@ -38,7 +38,7 @@ a:not([href]):not([tabindex]) {
 
 .navbar {
     padding: 0rem 3rem;
-    background: #bb9a76;
+    background: #e8c497;
     position: fixed;
     width: 100%;
     top: 0;
@@ -89,7 +89,7 @@ i.fa-bars
     position: fixed;
     width: 50px;
     height: 50px;
-    background: #bb9a76;
+    background: #e8c497;
     bottom: 40px;
     right: 50px;
     text-decoration: none;
@@ -144,7 +144,64 @@ i.fa-bars
       position: relative;
   }
 
+/* -------------------------------------------BARRE DE RECHERCHE---------------------------------------  */
 
+  
+nav .search-bar {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    background: #e8c497;
+ }
+
+ nav .search-bar form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ nav .search-bar input {
+    padding: 10px 15px;
+    width: calc(100% - 400px);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #825037;
+    background:#e8c497;
+ }
+
+ nav .search-bar button {
+    padding: 10px 10px;
+    border: none;
+    background: white;
+    margin-left: 10px;
+    border-radius: 2px;
+ }
+
+ nav .search-bar button:focus {
+    border:none;
+    outline: none;
+ }
+
+ nav .search-bar button:hover {
+    background: #825037;
+    color: #fff;
+ }
+
+ .zone-invi {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh + 100%);
+    background: #0000008f;
+    z-index: 5;
+    visibility: hidden;
+ }
+  
+ /* ----------------------------------------------------------------------------------  */
 
 /* ------------------ZONE PRODUIT----------------- */
 
@@ -179,10 +236,11 @@ i.fa-bars
 .zone-filtre {
     width: 100%;
     position: relative;
-    background: #fff;
+    background: #bb9a76;
     height: 80px;
     top: 50px;
-    z-index: 5;
+    z-index: 4;
+    color: #fff;
 }
 
 .page-produit .cards {
@@ -214,6 +272,7 @@ i.fa-bars
     padding: 12px;
     border-radius: 5px;
     width: 230px;
+    background: #ffe4c4;
 }
 
 .contents-filtre .produit-trouve {
@@ -455,7 +514,7 @@ footer {
     outline: none;
     border: none;
     padding: 5px 15px;
-    background-color: #bb9a76;
+    background-color: #e8c497;
     color: #fff;
     transition: ease .3s;
     text-transform: uppercase;
@@ -536,7 +595,7 @@ footer {
 @media (min-width: 768px) {
     .justify-content-md-end {
         justify-content: center !important;
-        background: #bb9a76;
+        background: #e8c497;
     }
 }
 
@@ -587,6 +646,6 @@ footer {
 @media (min-width: 320px) {
     .justify-content-md-end {
         justify-content: center !important;
-        background: #bb9a76;
+        background: #e8c497;
     }
 }

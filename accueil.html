@@ -39,7 +39,7 @@
                         <a class="nav-link text-white" href="faq.html">FAQ</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Nous contacter</a><span class="underline"></span>
+                        <a class="nav-link text-white" href="contacter.html">Nous contacter</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
@@ -57,7 +57,35 @@
                     <a class="nav-link text-white" href="panier.html"><img id="panier" class="img" src="img/bag.svg" alt=""></a><span class="underline"></span>
                 </li>
             </ul>
+            <div class="search-bar">
+                <form action="#">
+                    <input type="search" name="recherche" placeholder="Recherche...">
+                    <button id="btn-search">Rechercher</button>
+                </form>
+            </div>
         </nav> 
+        <div class="zone-invi"></div>
+        <script>
+            const lien = document.getElementById("search_");
+            const search = document.querySelector(".search-bar");
+            const btn = document.getElementById("btn-search");
+            const zone = document.querySelector(".zone-invi");
+
+            lien.addEventListener('click', () => {
+                search.style.visibility = "visible";
+                lien.classList.add('search-bar');
+                zone.style.visibility = "visible";
+                if(btn.addEventListener('click', () => {
+                    search.style.visibility = "hidden";
+                    lien.classList.remove('search-bar');
+                }));
+                if(zone.addEventListener('click', () => {
+                    search.style.visibility = "hidden";
+                    zone.style.visibility = "hidden";
+                    lien.classList.remove('search-bar');
+                }));
+            });
+        </script>
         <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
         <header></header> 
 
@@ -68,7 +96,7 @@
                     <div class="bienvenue-main">
                         <div class="bienvenue-msg text-center">
                             <h1>Bienvenue sur Skin Success !</h1>
-                            <a href="#en-savoir-plus" class="btn btn-bienvenue btn-lg my-4 scroll-smooth">En savoir plus</a>
+                            <a href="#en-savoir-plus" class="btn btn-bienvenue btn-lg my-4 scroll-smooth">Découvrir </a>
                         </div>
                     </div>
                 </div>
@@ -84,63 +112,65 @@
                     <div class="col-lg-12 col-sm-6 col-md-8 py-5 text-center">
                         <!-- Titre Vente populaire -->
                         <div class="titre py-4">
-                            <h1>Vente populaire</h1>
+                            <h1>Nos meilleure vente</h1>
                         </div>
                         <!-- Séparateur  -->
                         <div class="separateur separateur-center my-2"></div>
                         <!-- Contenue de la présentation -->
-                        <div class="swiper-container mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="contenue py-5">
-                                        <div class="container-img">
-                                            <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                        <div class="container-vente-popu">
+                            <div class="swiper-container mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="contenue py-5">
+                                            <div class="container-img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-vente">
+                                                <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>
+                                                    Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
+                                                </p>
+                                                <div class="voir-plus">
+                                                    <button><a href="#">Voir +</a></button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="content-vente">
-                                            <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
-                                            <p>
-                                                Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
-                                            </p>
-                                            <div class="voir-plus">
-                                                <button><a href="#">Voir +</a></button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="contenue py-5">
+                                            <div class="container-img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-vente">
+                                                <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>
+                                                    Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
+                                                </p>
+                                                <div class="voir-plus">
+                                                    <button><a href="#">Voir +</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="contenue py-5">
+                                            <div class="container-img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                            </div>
+                                            <div class="content-vente">
+                                                <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>
+                                                    Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
+                                                </p>
+                                                <div class="voir-plus">
+                                                    <button><a href="#">Voir +</a></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="contenue py-5">
-                                        <div class="container-img">
-                                            <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
-                                        </div>
-                                        <div class="content-vente">
-                                            <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
-                                            <p>
-                                                Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
-                                            </p>
-                                            <div class="voir-plus">
-                                                <button><a href="#">Voir +</a></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="contenue py-5">
-                                        <div class="container-img">
-                                            <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
-                                        </div>
-                                        <div class="content-vente">
-                                            <h3 class="titre-vente">TUMERIC SCRUB GOMMAGE</h3>
-                                            <p>
-                                                Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
-                                            </p>
-                                            <div class="voir-plus">
-                                                <button><a href="#">Voir +</a></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -290,7 +320,7 @@
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veritatis pariatur magnam quasi illo corrupti, placeat molestias rem, omnis excepturi id doloribus odit officiis dolorum aliquid officia, non inventore velit.
                                                 </p>
                                                 <div class="contact-btn my-4">
-                                                    <a href="#contact" class="btn btn-contact">Me contacter</a>
+                                                    <a href="contacter.html" class="btn btn-contact">Nous contacter</a>
                                                 </div>
                                             </div>
                                         </div>

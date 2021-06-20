@@ -14,7 +14,7 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css"/>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css"/>
             <!-- Style -->
-            <link rel="stylesheet" href="css/inscrire.css">
+            <link rel="stylesheet" href="css/contacter.css">
             <title>Accueil</title>
         </head>
         <div class="scroll-up-btn">
@@ -48,10 +48,10 @@
             </div>
             <ul class="navbar-nav-logo">
                 <li id="search_">
-                    <a class="nav-link text-white" href="#"><img id="search" class="img" src="img/search.svg" alt=""></a><span class="underline"></span>
+                    <a class="nav-link text-white" href="#rien"><img id="search" class="img" src="img/search.svg" alt=""></a><span class="underline"></span>
                 </li>
                 <li id="user">
-                    <a class="nav-link text-white" href="#"><img class="img" src="img/user.svg" alt=""> </a><span class="underline"></span>
+                    <a class="nav-link text-white" href="inscrire.html"><img class="img" src="img/user.svg" alt=""></a><span class="underline"></span>
                 </li>
                 <li id="panier">
                     <a class="nav-link text-white" href="panier.html"><img id="panier" class="img" src="img/bag.svg" alt=""></a><span class="underline"></span>
@@ -65,7 +65,9 @@
             </div>
         </nav> 
         <div class="zone-invi"></div>
+        <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
         <script>
+        
             const lien = document.getElementById("search_");
             const search = document.querySelector(".search-bar");
             const btn = document.getElementById("btn-search");
@@ -85,96 +87,105 @@
                     lien.classList.remove('search-bar');
                 }));
             });
+           
         </script>
-        <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
         <body>
-
-            <!-- Formulaire -->
-            <div class="container content-formulaire">
+          <!-- Panier -->
+          <div class="container content-contact">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-sm-6 col-md-8 py-5 text-center">
-                        <!-- Titre Inscrire -->
+                        <!-- Titre Panier -->
                         <div class="titre py-4">
-                            <h1>Formulaire</h1>
+                            <h1>Nous contacter</h1>
                         </div>
                         <!-- Séparateur  -->
                         <div class="separateur separateur-center my-2"></div>
-                        <div class="container-formulaire">
-                            <div class="login-wrap">
-                                <div class="login-html">
-                                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Connexion</label>
-                                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Inscription</label>
-                                    <div class="login-form">
-                                        <div class="sign-in-htm">
-                                            <div class="group">
-                                                <label for="user" class="label">E-mail</label>
-                                                <input id="user" type="text" class="input">
-                                            </div>
-                                            <div class="group">
-                                                <label for="pass" class="label">Mot de passe</label>
-                                                <input id="pass" type="password" class="input" data-type="password">
-                                            </div>
-                                            <div class="group">
-                                                <input id="check" type="checkbox" class="check" checked>
-                                                <label for="check"><span class="icon"></span> Se souvenir de moi</label>
-                                            </div>
-                                            <div class="group">
-                                                <input type="submit" class="button" value="Se connecter">
-                                            </div>
-                                            <div class="hr"></div>
-                                            <div class="foot-lnk">
-                                                <a href="#forgot">Mot de passe oublié?</a>
-                                            </div>
-                                        </div>
-                                        <div class="sign-up-htm">
-                                            <div class="group">
-                                                <label for="user" class="label">Prénom</label>
-                                                <input id="user" type="text" class="input">
-                                            </div>
-                                            <div class="group">
-                                                <label for="user" class="label">Nom de famille</label>
-                                                <input id="user" type="text" class="input">
-                                            </div>
-                                            <div class="group">
-                                                <label for="pass" class="label">Email Adresse</label>
-                                                <input id="pass" type="text" class="input">
-                                            </div>
-                                            <div class="group">
-                                                <label for="pass" class="label">Mot de passe</label>
-                                                <input id="pass" type="password" class="input" data-type="password">
-                                            </div>
-                                            <div class="group" id="group">
-                                                <label for="pass" class="label">Confirmation du mot de passe</label>
-                                                <input id="pass" type="password" class="input" data-type="password">
-                                            </div>
-                                            <div class="group">
-                                                <input type="submit" class="button" value="S'inscrire">
-                                            </div>
-                                            <div class="hr"></div>
-                                            <div class="foot-lnk">
-                                                <label for="tab-1">Déjà membre ?</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="container-contact">
+                            <p class="question">Vous avez une question ou un problème ? Nous mettons tout en œuvre pour vous répondre. Contactez-nous par téléphone ou par e-mail. Vous offrir une expérience hors du commun est notre objectif principal.</p>
+                            <div class="content-clients">
+                                <h3>Pour les clients</h3>
+                                <p>Questions sur votre commande
+                                    En cas de questions sur une commande en cours ou passée, merci d’envoyer un e-mail à Skinsuccess@outlook.fr</p>
+                                    
+                                    <p>Questions d’ordre général pour le service client
+                                    En cas de questions d’ordre général à adresser au service client, merci de nous contacter à l’adresse Skinsuccess@outlook.fr</p>
+                                    
+                                    <p>Questions techniques
+                                    En cas de questions ou de difficultés techniques liées au site Internet, merci de nous contacter à l’adresse Skinsuccess@outlook.fr</p>
+                                    
+                                    <p>Contactez-nous par téléphone au
+                                    06 47 26 45 97
+                                    Du lundi au vendredi de 10 h à 18 h.</p>
+                            </div>
+                            <div class="content-siege">
+                                <h3>Siège de l'entreprise</h3>
+                                <p>Bare Escentuals UK
+                                    Shiseido Group, 10th Floor, The Adelphi, 1-11 John Adam Street
+                                    London, WC2N 6HT</p>
+                            </div>
+                            <div class="formulaire">
+                                <h3>Entrer en contact</h3>
+                                <div class="form">
+                                    <form action="#">
+                                        <input type="text" name="nom" placeholder="Entrer votre Nom..." required="">
+                                        <input type="email" name="email" placeholder="Entrer votre Email..." required="">
+                                        <input type="text" name="sujet" placeholder="Entrer le Sujet..." required="">
+                                        <input type="text" name="numéro" placeholder="Entrer votre numéro de téléphone..." required="">
+                                        <textarea name="message" id="" cols="30" rows="5" placeholder="Entrer votre message"></textarea>
+                                        <button type="submit">Envoyer</button>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
             <script>
-                const toTop = document.querySelector(".gotopbtn");
-                window.addEventListener("scroll", () => {
-                    if (window.pageYOffset > 100) {
-                        toTop.classList.add("active-btn-top");
-                    } else {
-                        toTop.classList.remove("active-btn-top");
-                    }
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                centeredSlides: true,
+                spaceBetween: 30,
+                loop: true,
+                grabCursor: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+            });
+            </script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <script>
+                    const toTop = document.querySelector(".gotopbtn");
+                    window.addEventListener("scroll", () => {
+                        if (window.pageYOffset > 100) {
+                            toTop.classList.add("active-btn-top");
+                        } else {
+                            toTop.classList.remove("active-btn-top");
+                        }
+                    });
+            </script>
+            <script>
+                
+                const produit = document.querySelector(".container-produit");
+
+                produit.addEventListener('mouseover', () => {
+                    console.log("BIEN BON !");
+                    produit.classList.add("zone-ajouter");
                 });
+                
+                produit.addEventListener('mouseout', function(){
+                    console.log("BIEN BON !");
+                    produit.classList.remove("zone-ajouter");
+                });
+            
             </script>
             
         </body>
@@ -193,11 +204,5 @@
                     </h3>
                 </div>
             </div>
-        </footer>
+      </footer>
 </html>
-
-
-
-
-
-
