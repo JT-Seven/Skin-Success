@@ -10,7 +10,11 @@
   
   body {
     background-color: bisque;
-    height: 0;
+    height: 5px;
+  }
+
+  .container-seven {
+      height: 100vh;
   }
   
   html
@@ -56,20 +60,6 @@
     display: flex;
     position: relative;
     top: 7px;
-  }
-  
-  nav .compteur {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 28px;
-    background: #bb9a76;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    text-align: center;
-    font-size: .8rem;
-    color: #fff;
   }
   
   
@@ -131,7 +121,7 @@
       width: 30px;
   }
   
-  nav .img-panier {
+  nav .img-informations-produit{
     width: 25px;
     position: absolute;
     top: 20px;
@@ -150,7 +140,7 @@
     position: relative;
   }
   
-  #panier {
+  #informations-produit{
     position: relative;
   }
   
@@ -216,245 +206,252 @@
     visibility: hidden;
  }
   
- /* ----------------------------------------------------------------------------------  */
+/* ------------------------------------------VUE IMAGE----------------------------------------  */
   
-  /* --------------------------------------------------------------------------------- */
-  
-  .container-panier {
-    text-align: justify;
-    height: auto;
-    margin-top: 70px;
-    padding: 0 150px;
-  }
-
-.commandes {
-    height: 900px;
-    overflow-y: scroll;
+.container-produit {
     width: 100%;
-    margin-bottom: 105px;
-}
-
-.container-panier .prix-total {
-    position: absolute;
-    bottom: 0;
-    background: #000;
-    width: calc(100% - 340px);
-    color: #fff;
-    padding: 20px;
-}
-
-.container-panier .prix-total h3 {
-    font-weight: lighter;
-    text-transform: uppercase;
-}
-
-.container-panier .prix-total p {
-    font-size: 1.3rem;
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
-
-.container-panier .passer-commande {
-    position: absolute;
-    left: 65%;
-    top: 30px;
-}
-
-.container-panier .passer-commande button {
-    padding: 14px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    /* background-color: #d34bca; */
-    background-color: salmon;
-    color: #fff;
-    opacity: .85;
-    transition: .3s ease-in-out;
-    font-weight: lighter;
-    width: 250px;
-    text-transform: uppercase;
-}
-
-.container-panier .passer-commande button:hover {
-    opacity: 1;
-}
-
-.container-panier .passer-commande p {
-    font-weight: lighter;
-    font-size: 1.3rem;
-}
-
-.contents-commandes {
-    background: #bb9a76;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+    background: #e8c497;
     position: relative;
 }
 
-.py-5 .container-img img {
-    width: 200px;
+#vue-produit {
+    background: none;
 }
 
-.py-5 .container-img {
+/* .container-produit .fond-color {
+    background: purple;
+    position: absolute;
+    left:-550px;
+    overflow: hidden;
+    height: 500px;
+    width: 90%;
+    z-index: 1;
+} */
+
+.container-image {
+    background: transparent;
+    position: relative;
+    z-index: 2;
     display: flex;
-    justify-content: flex-start;
-    cursor: pointer;
+    flex-direction: column;
+    width: 55%;
 }
 
-.contents-commandes h3 {
-    font-size: 1.1rem;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: #fff;
+.container-image .contents {
+    margin-bottom: 50px;
+    display: flex;
+}
+.container-image .contents .swiper-slide {
+background: #fff;
+}
+.container-image .contents #img img {
+    width: 500px;
 }
 
-.contents-commandes p {
+.container-image .mini-photo {
+    display: flex;
+}
+.container-image .mini-photo img {
+    width: 120px;
+}
+
+/* -------------------INFORMATION--------------- */
+
+.container-information {
+    background: #825037;
+    width: 45%;
     position: absolute;
-    top: 160px;
-    left: 90%;
+    right: 0;
+    height: 100%;
+    top: 0;
+    padding: 50px;
     color: #fff;
+    font-weight: lighter;
 }
 
-.contents-commandes .quantiter {
-    position: absolute;
-    top: 160px;
-    left: 230px;
+.container-information #prix {
+    margin-left: auto;
+    width: max-content;
+    font-size: 1.3rem;
+}
+
+.container-information .contents-information {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+/* QUANTITER */
+
+.container-information .quantiter {
+    position: relative;
     display: flex;
     color: #fff;
     opacity: .7;
     transition: .3s ease;
     font-weight: lighter;
+    align-items: center;
 }
 
-.contents-commandes .quantiter:hover {
+.container-information .quantiter:hover {
     opacity: 1;
 }
 
-.contents-commandes .quantiter select {
+.container-information .quantiter select {
     background: transparent;
-    border: none;
-    padding: 0 10px;
+    border: 2px solid #fff;
+    padding: 5px 15px;
+    height: 60px;
+    margin-left: 10px;
     color: #fff;
 }
 
-.contents-commandes .quantiter select option {
-    background: #e8c497;
+.container-information .quantiter select option {
+    background:#825037;
 }
 
-.contents-commandes .quantiter select:focus {
-    border: none;
+.container-information .quantiter select:focus {
     outline: none;
 }
 
-.contents-commandes .btn {
-    position: absolute;
-    top: 20px;
-    left: 90%;
+/* EN SAVOIR PLUS  */
+
+.container-information #plus{
+    text-decoration: underline;
+    font-style: italic;
+    color: #fff;
 }
 
-.contents-commandes .btn button {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+/* BOUTTON  */
+
+.container-information .alias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.container-information .alias button {
+    padding: 0px 40px;
+    text-align: center;
+    height: 60px;
+    margin-right: 40px;
     border: none;
     outline: none;
+    background: salmon;
+    border-radius: 5px;
+    color: #fff;
+    opacity: .85;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.container-information .alias button:hover {
+    opacity: 1;
+}
+
+
+/* ------------------------------------------INFORMATIONS PRODUIT--------------------------------------- */
+  
+.informations-produit {
+    background: #fff;
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.container-onglets{
+    background: #f1f1f1;
+    height: 15%;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.onglets {
+    width: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .3s ease-in-out;
-}
-
-.contents-commandes .btn button:hover {
-    opacity: .8;
-}
-
-.contents-commandes .btn button span:nth-child(1) {
-    transform: rotate(135deg);
-    height: 2px;
-    width: 20px;
-    background-color: #000;
-    position: absolute;
-}
-
-.contents-commandes .btn button span:nth-child(2) {
-    transform: rotate(45deg);
-    height: 2px;
-    width: 20px;
-    background-color: #000;
-    position: absolute;
-}
-
-
-.commandes::-webkit-scrollbar{
-width:10px;
-}
-.commandes::-moz-scrollbar {
-width:10px;
-}
-.commandes::-ms-scrollbar {
-width:10px;
-}
-.commandes::-o-scroolbar {
-width:10px;
-}
-.commandes::-webkit-scrollbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-.commandes::-moz-scrollbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-.commandes::-ms-scrollbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-.commandes::-o-scroolbar-thumb {
-background: transparent;
-border-radius: 6px;
-}
-
-/* ---------------------------------------LIVRAISON------------------------------------------ */
-
-.container-livraison {
-    margin-top: 50px;
-    padding: 0 150px;
-    width: 100%;
-}
-
-.container-livraison .contents-livraison { 
-    padding: 15px;
-}
-
-.container-livraison .contents-livraison h3 { 
+    font-size: 22px;
     font-weight: lighter;
-    text-transform: uppercase;
-    color: #000;
+    cursor: pointer;
 }
 
-.container-livraison .contents-livraison button { 
-    padding: 10px;
+
+.informations-produit .box {
     width: 100%;
-    margin-top: 30px;
-    outline: none;
-    border:none;
-    background: #bb9a76;
-    color: #fff;
-    border-radius: 5px;
-    transition: .3s ease-in-out;
-    opacity: 1;
+    height: 70%;
+    padding: 20px;
+    position: absolute;
+    opacity: 0;
 }
 
-.container-livraison .contents-livraison button:hover { 
-    opacity: .6;
+.informations-produit .box h3 {
+    padding: 20px;
+    font-weight: lighter;
+}
+.informations-produit .box p {
+    padding: 20px;
+    text-align: initial;
 }
 
 
+.informations-produit::-webkit-scrollbar{
+width:0px;
+}
+.informations-produit::-moz-scrollbar {
+width:0px;
+}
+.informations-produit::-ms-scrollbar {
+width:0px;
+}
+.informations-produit::-o-scroolbar {
+width:0px;
+}
+.informations-produit::-webkit-scrollbar-thumb {
+background: transparent;
+border-radius: 6px;
+}
+.informations-produit::-moz-scrollbar-thumb {
+background: transparent;
+border-radius: 6px;
+}
+.informations-produit::-ms-scrollbar-thumb {
+background: transparent;
+border-radius: 6px;
+}
+.informations-produit::-o-scroolbar-thumb {
+background: transparent;
+border-radius: 6px;
+}
+    
+/* Anim */
+
+.active {
+    background: #825037;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.activeContenu {
+    animation: fade 0.5s forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+} 
 
 /* --------------------------------------------------------------------------------- */
-
 
 /* ---------------------------------------VUE RECEMENT------------------------------------------ */
 
@@ -467,7 +464,6 @@ border-radius: 6px;
 .container-articles-vue .contents-articles-vue {
     width: 100%;
     height: 100%;
-    padding: 15px;
 }
 
 .container-articles-vue .contents-articles-vue h3 {
@@ -529,17 +525,23 @@ border-radius: 6px;
 
 /* --------------------------------------------------------------------------------- */
 
+
+  
+  
+  /* --------------------------------------------------------------------------------- */
+  
   
 /* ----------Swiper-vente---------- */
 
 .swiper-container {
     width: 100%;
-}
+    height: 100%;
+  }
 
-.swiper-slide {
+  .swiper-slide {
     text-align: center;
     font-size: 18px;
-    margin-right: 0px !important;
+
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -561,6 +563,51 @@ border-radius: 6px;
     height: 100%;
     object-fit: cover;
   }
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ .mini-photo .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+  }
   
   
   /* --------------------------------------------------------------------------------- */
@@ -568,6 +615,50 @@ border-radius: 6px;
   
   /* -------------------PRODUIT---------------- */
   
+  
+  .informations-produit.pt-5,.informations-produit.py-5, .informations-produit.pb-5, .pt-5, .py-5 {
+    padding-top: 0rem!important;
+    padding-bottom: 0rem!important;
+  }
+  
+  .informations-produit.content-informations-produit{
+    text-align: initial;
+    margin-top: 15px;
+  }
+  
+  .informations-produit.content-informations-produith3 {
+    font-size: 1.4rem;
+  }
+  
+  .informations-produit#contents {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .informations-produit .boxe {
+    margin: 10px 10px;
+  }
+  
+  .informations-produit.pb-5, .informations-produit.py-5, .informations-produit.pt-5, .informations-produit.py-5 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem!important;
+  }
+  
+  /* Présentation */
+  
+  .titre h1 
+  {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 45px;
+  }
+  
+  .informations-produit .boxe p 
+  {
+    color:rgb(0, 0, 0);
+    font-weight: lighter;
+    font-size: x-large;
+  }
   
   .panier .pt-5,.panier .py-5, .panier .pb-5, .pt-5, .py-5 {
     padding-top: 0rem!important;
@@ -673,7 +764,6 @@ border-radius: 6px;
     justify-content: flex-start;
     cursor: pointer;
   }
-  
   
   /* Footer */
   
@@ -786,7 +876,7 @@ border-radius: 6px;
     padding: 10px !important;
   }
   
-  .contact-contenue
+  .contact.informations-produit -boxe
   {
     margin:auto !important;
     text-align: center !important;
@@ -815,7 +905,7 @@ border-radius: 6px;
   }
 
   @media (max-width: 768px) {
-    .container-panier {
+    .container-informations-produit{
         padding: 0;
     }
     .swiper-slide {
@@ -833,31 +923,31 @@ border-radius: 6px;
         align-items: center;
         flex-direction: column;
     }
-    .contents-commandes .btn {
+    .container-information .btn {
         position: absolute;
         left: 80%; 
     }
 
-    .contents-commandes p {
+    .container-information p {
         top: 200px;
         left: 80%;
     }
 
-    .contents-commandes h3 {
+    .container-information h3 {
         margin-left: 0px;
     }
-    .contents-commandes .quantiter {
+    .container-information .quantiter {
         top: 230px;
         left: 20px;
     }
-    .contents-commandes {
+    .container-information {
         padding: 25px 15px;
     }
     .container-livraison {
         padding: 0px !important;
         width: 100%;
     }
-    .container-panier .passer-commande {
+    .container-informations-produit.passer-commande {
        top: 75px;
        position: inherit;
     }
@@ -876,7 +966,7 @@ border-radius: 6px;
     position: relative;
     left: 0;
    }
-   #panier {
+   #informations-produit{
     position: relative;
     left: 0;
    }
@@ -889,34 +979,34 @@ border-radius: 6px;
    .on:not(.show)  {
     display: block;
     }
-    .container-panier {
+    .container-informations-produit{
         padding: 0;
     }
-    .contents-commandes .btn {
+    .container-information .btn {
         position: absolute;
         left: 80%; 
     }
 
-    .contents-commandes p {
+    .container-information p {
         top: 200px;
         left: 80%;
     }
 
-    .contents-commandes h3 {
+    .container-information h3 {
         margin-left: 0px;
     }
-    .contents-commandes .quantiter {
+    .container-information .quantiter {
         top: 230px;
         left: 20px;
     }
-    .contents-commandes {
+    .container-information {
         padding: 25px 20px;
     }
-    .container-panier .prix-total {
+    .container-informations-produit.prix-total {
         bottom: -10px;
         width: calc(100% - 40px);
     }
-    .container-panier .passer-commande button {
+    .container-informations-produit.passer-commande button {
         white-space: nowrap;
         transform: translateX(-65px);
         position: absolute;
@@ -937,13 +1027,13 @@ border-radius: 6px;
    .swiper-slide {
     margin-left: 30px;
    }
-   .container-panier .passer-commande {
+   .container-informations-produit.passer-commande {
     left: 55%;
    }
   }
   
   @media (max-width: 1320px) {
-    #panier {
+    #informations-produit{
         position: relative;
         left: 0;
     }

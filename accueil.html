@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse justify-content-md-end" id="navb">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Accueil</a><span class="underline"></span>
+                        <a class="nav-link text-white" href="accueil.html">Accueil</a><span class="underline"></span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="produit.html">Nos Produits Skin Success</a><span class="underline"></span>
@@ -41,9 +41,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contacter.html">Nous contacter</a><span class="underline"></span>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
-                    </li>
+                    
                 </ul> 
             </div>
             <ul class="navbar-nav-logo">
@@ -74,13 +72,16 @@
             lien.addEventListener('click', () => {
                 search.style.visibility = "visible";
                 lien.classList.add('search-bar');
+                btn.style.transition = ".5s ease";
                 zone.style.visibility = "visible";
                 if(btn.addEventListener('click', () => {
+                    btn.style.transition = "none";
                     search.style.visibility = "hidden";
                     lien.classList.remove('search-bar');
                 }));
                 if(zone.addEventListener('click', () => {
                     search.style.visibility = "hidden";
+                    btn.style.transition = "none";
                     zone.style.visibility = "hidden";
                     lien.classList.remove('search-bar');
                 }));
@@ -131,7 +132,7 @@
                                                     Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
                                                 </p>
                                                 <div class="voir-plus">
-                                                    <button><a href="#">Voir +</a></button>
+                                                    <button><a href="affiche-produit.html">Voir +</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -147,7 +148,7 @@
                                                     Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
                                                 </p>
                                                 <div class="voir-plus">
-                                                    <button><a href="#">Voir +</a></button>
+                                                    <button><a href="affiche-produit.html">Voir +</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,7 +164,7 @@
                                                     Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.
                                                 </p>
                                                 <div class="voir-plus">
-                                                    <button><a href="#">Voir +</a></button>
+                                                    <button><a href="affiche-produit.html">Voir +</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -217,7 +218,7 @@
                             <div class="scroll">
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -226,7 +227,7 @@
                                 </div>
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -235,7 +236,7 @@
                                 </div>
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -244,7 +245,7 @@
                                 </div>
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -253,7 +254,7 @@
                                 </div>
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -262,7 +263,7 @@
                                 </div>
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -271,7 +272,7 @@
                                 </div>
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -280,7 +281,43 @@
                                 </div>
                                 <div id="contents" class="contenue py-5">
                                     <div id="collection-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                    </div>
+                                    <div class="content-collection">
+                                        <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                        <p>€19,99</p>
+                                    </div>
+                                </div>
+                                <div id="contents" class="contenue py-5">
+                                    <div id="collection-img">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <div class="content-collection">
                                         <h3>TUMERIC SCRUB GOMMAGE</h3>

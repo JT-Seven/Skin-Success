@@ -41,9 +41,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contacter.html">Nous contacter</a><span class="underline"></span>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
-                    </li>
+                    
                 </ul> 
             </div>
             <ul class="navbar-nav-logo">
@@ -74,13 +72,16 @@
             lien.addEventListener('click', () => {
                 search.style.visibility = "visible";
                 lien.classList.add('search-bar');
+                btn.style.transition = ".5s ease";
                 zone.style.visibility = "visible";
                 if(btn.addEventListener('click', () => {
+                    btn.style.transition = "none";
                     search.style.visibility = "hidden";
                     lien.classList.remove('search-bar');
                 }));
                 if(zone.addEventListener('click', () => {
                     search.style.visibility = "hidden";
+                    btn.style.transition = "none";
                     zone.style.visibility = "hidden";
                     lien.classList.remove('search-bar');
                 }));

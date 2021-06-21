@@ -41,9 +41,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contacter.html">Nous contacter</a><span class="underline"></span>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Suivre notre commande</a><span class="underline"></span>
-                    </li>
+                    
                 </ul> 
             </div>
             <ul class="navbar-nav-logo">
@@ -74,13 +72,16 @@
             lien.addEventListener('click', () => {
                 search.style.visibility = "visible";
                 lien.classList.add('search-bar');
+                btn.style.transition = ".5s ease";
                 zone.style.visibility = "visible";
                 if(btn.addEventListener('click', () => {
+                    btn.style.transition = "none";
                     search.style.visibility = "hidden";
                     lien.classList.remove('search-bar');
                 }));
                 if(zone.addEventListener('click', () => {
                     search.style.visibility = "hidden";
+                    btn.style.transition = "none";
                     zone.style.visibility = "hidden";
                     lien.classList.remove('search-bar');
                 }));
@@ -103,7 +104,7 @@
                             <div class="commandes">
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -126,7 +127,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -149,7 +150,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -172,7 +173,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -195,7 +196,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -218,7 +219,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -241,7 +242,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -264,7 +265,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -287,7 +288,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -310,7 +311,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -333,7 +334,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -356,7 +357,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -379,7 +380,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -402,7 +403,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -425,7 +426,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -448,7 +449,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -471,7 +472,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -494,7 +495,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -517,7 +518,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -540,7 +541,7 @@
                                 </div>
                                 <div class="contents-commandes">
                                     <div class="container-img">
-                                        <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                     </div>
                                     <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
                                     <p>€19,99</p>
@@ -561,6 +562,76 @@
                                         </form>
                                     </div>
                                 </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="contents-commandes">
+                                    <div class="container-img">
+                                        <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                    </div>
+                                    <h3 class="titre-commande">TUMERIC SCRUB GOMMAGE</h3>
+                                    <p>€19,99</p>
+                                    <div class="btn">
+                                        <button><span></span><span></span></button>
+                                    </div>
+                                    <div class="quantiter">
+                                        <label for="qte">Qté.</label>
+                                        <form action="#">
+                                            <select name="quantiter" for="qte" id="qte">
+                                                <option value="1"selected disabled>1</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                
                             </div>
                             <div class="prix-total">
                                 <div class="passer-commande">
@@ -590,7 +661,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -601,7 +672,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -612,7 +683,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -623,7 +694,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -634,7 +705,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -645,7 +716,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -656,7 +727,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -667,7 +738,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -678,7 +749,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -689,7 +760,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -700,7 +771,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -711,7 +782,7 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -722,7 +793,139 @@
                                     <div class="swiper-slide">
                                         <div class="container-produit" id="vue-produit">
                                             <div id="img">
-                                                <img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt="">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                                            </div>
+                                            <div class="content-produit">
+                                                <h3>TUMERIC SCRUB GOMMAGE</h3>
+                                                <p>€19,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-produit" id="vue-produit">
+                                            <div id="img">
+                                                <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
                                             </div>
                                             <div class="content-produit">
                                                 <h3>TUMERIC SCRUB GOMMAGE</h3>
@@ -742,16 +945,13 @@
 
             <!-- Initialize Swiper -->
             <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 4,
-                centeredSlides: true,
-                spaceBetween: 30,
+             var swiper2 = new Swiper(".mySwiper", {
                 loop: true,
-                grabCursor: true,
-                pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                },
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
             });
             </script>
 
