@@ -250,6 +250,8 @@ background: #fff;
 
 .container-image .mini-photo {
     display: flex;
+    position: relative;
+    top: -25px;
 }
 .container-image .mini-photo img {
     width: 120px;
@@ -344,6 +346,7 @@ background: #fff;
     transition: .3s ease-in-out;
     text-transform: uppercase;
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 .container-information .alias button:hover {
@@ -577,7 +580,7 @@ border-radius: 6px;
   }
 
   .mySwiper2 {
-    height: 80%;
+    height: 100%;
     width: 100%;
   }
 
@@ -908,7 +911,7 @@ border-radius: 6px;
     .container-informations-produit{
         padding: 0;
     }
-    .swiper-slide {
+    .container-articles-vue  .swiper-slide {
         margin-right: 130px !important;
     }
     .container-articles-vue .contents-articles-vue {
@@ -935,10 +938,6 @@ border-radius: 6px;
 
     .container-information h3 {
         margin-left: 0px;
-    }
-    .container-information .quantiter {
-        top: 230px;
-        left: 20px;
     }
     .container-information {
         padding: 25px 15px;
@@ -995,10 +994,6 @@ border-radius: 6px;
     .container-information h3 {
         margin-left: 0px;
     }
-    .container-information .quantiter {
-        top: 230px;
-        left: 20px;
-    }
     .container-information {
         padding: 25px 20px;
     }
@@ -1011,11 +1006,21 @@ border-radius: 6px;
         transform: translateX(-65px);
         position: absolute;
     }
-    .swiper-slide {
+    .container-articles-vue  .swiper-slide {
         margin-right: 100px !important;
     }
     .container-livraison {
         padding: 0 120px;
+    }
+    .container-information {
+      width: 100%;
+      position: relative;
+    }
+    .container-image {
+      width: 100%;
+    }
+    .container-information #prix {
+      margin-bottom: 50px;
     }
   }
   
@@ -1024,11 +1029,25 @@ border-radius: 6px;
       width: 100%;
       object-fit: cover;
    }
-   .swiper-slide {
-    margin-left: 30px;
+   .container-articles-vue  .swiper-slide {
+      margin-left: 30px;
    }
    .container-informations-produit.passer-commande {
     left: 55%;
+   }
+   .container-information .alias {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .container-information .quantiter { 
+      margin-bottom: 30px;
+      margin-top: 15px;
+   }
+   .container-information .alias button {
+     width: 100%;
    }
   }
   
