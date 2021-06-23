@@ -63,6 +63,45 @@
             </div>
         </nav> 
         <div class="zone-invi"></div>
+        <div class="slide-panier">
+            <div class="contents-slide-panier">
+                <div class="titre">
+                    <h3>Votre panier</h3>
+                </div>
+                <div class="scroll">
+                    <div class="informations">
+                        <div class="container-img">
+                            <a href="affiche-produit.html"><img src="https://cdn.shopify.com/s/files/1/0565/2480/0157/files/creme1_720x.jpg?v=1620379686" alt=""></a>
+                        </div>
+                        <div class="contents-info">
+                            <h3 class="titre-panier">TUMERIC SCRUB GOMMAGE</h3>
+                            <p class="prix">€19,99</p>
+                            <div class="quantiter">
+                                <label for="qte">Qté.</label>
+                                <form action="#">
+                                    <select name="quantiter" for="qte" id="qte">
+                                        <option value="1"selected disabled>1</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </form>
+                                <a href="#"><p>Supprimer</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prix-total">
+                    <h3>Total Commande</h3>
+                    <p>€400.20</p>
+                    <form class="btn" action="#">
+                        <button>Afficher le panier</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <script>
             const lien = document.getElementById("search_");
             const search = document.querySelector(".search-bar");
@@ -86,6 +125,20 @@
                     lien.classList.remove('search-bar');
                 }));
             });
+        </script>
+        <script>
+            const panier = document.getElementById("panier");
+            const slide = document.querySelector(".slide-panier");
+
+            panier.addEventListener('mouseover', () => {
+                slide.style.display = "block";
+            })
+            slide.addEventListener('mouseover', () => {
+                slide.style.display = "block";
+            })
+            slide.addEventListener('mouseout', () => {
+                slide.style.display = "none";
+            })
         </script>
         <a class="gotopbtn" href="#"><img title="Revenir au top" class="img-panier" src="img/btntop.svg" alt=""></a>
         <header></header> 
